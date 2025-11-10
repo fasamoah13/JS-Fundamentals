@@ -1,16 +1,18 @@
-// Array of lines
-const lines = [
-    "Date: 2025-11-10 22:53:37 +0000",
-    "File is present"
+// Define the messages using 'const'
+const messages = [
+    "C is fun",
+    "Python is cool",
+    "JavaScript is amazing"
 ];
 
-// Initialize output string
-let output = "";
+// Initialize the output string using 'let'
+let output = '';
 
-// Loop through array to build the output
-for (let i = 0; i < lines.length; i++) {
-    output += lines[i] + "\n";
+// Loop through the array to build the single output string,
+// appending a newline character (\n) after each message.
+for (const message of messages) {
+    output += message + '\n';
 }
 
-// Print all lines at once using one console.log
-console.log(output.slice(0, -1)); // remove the last \n
+// Print the entire string in a single console.log call.
+console.log(output);
