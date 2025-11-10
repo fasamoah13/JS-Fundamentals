@@ -1,14 +1,16 @@
-// Array of lines to print
+// Array of lines
 const lines = [
     "Date: 2025-11-10 22:53:37 +0000",
     "File is present"
 ];
 
-// Build the output using a loop
+// Initialize output string
 let output = "";
+
+// Loop through array to build the output
 for (let i = 0; i < lines.length; i++) {
-    output += lines[i] + (i < lines.length - 1 ? "\n" : "");
+    output += lines[i] + "\n";
 }
 
 // Print all lines at once using one console.log
-console.log(output);
+console.log(output.slice(0, -1)); // remove the last \n
