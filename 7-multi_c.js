@@ -1,18 +1,17 @@
-// Get the first argument
-const arg = process.argv[2];
+// Get the first command-line argument
+const input = process.argv[2];
 
-// Convert argument to integer
-const count = parseInt(arg, 10);
+// Convert input to integer
+const count = parseInt(input, 10);
 
-// Check if it's a valid number
-if (Number.isNaN(count)) {
+// Check if count is a valid number
+if (isNaN(count)) {
     console.log("Missing number of occurrences");
 } else {
-    // Build the output using a loop
-    let output = "";
-    for (let i = 0; i < count; i++) {
-        output += "C is fun\n";
+    // Loop to print "C is fun" count times
+    let i = 0;
+    while (i < count) {
+        console.log("C is fun");
+        i++;
     }
-    // Print all lines at once
-    console.log(output.slice(0, -1)); // remove the last newline
 }
