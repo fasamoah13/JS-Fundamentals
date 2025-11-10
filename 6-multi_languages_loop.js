@@ -4,13 +4,11 @@ const lines = [
     "File is present"
 ];
 
-// Initialize empty string
+// Build the output using a loop
 let output = "";
-
-// Loop through array to build the output string
 for (let i = 0; i < lines.length; i++) {
-    output += lines[i] + "\n";
+    output += lines[i] + (i < lines.length - 1 ? "\n" : "");
 }
 
 // Print all lines at once using one console.log
-console.log(output.trim());
+console.log(output);
