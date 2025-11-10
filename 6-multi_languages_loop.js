@@ -1,19 +1,16 @@
-// Array of lines
+// Array of lines to print
 const lines = [
-    "C is fun",
-    "Python is cool",
-    "JavaScript is amazing"
+    "Date: 2025-11-10 22:53:37 +0000",
+    "File is present"
 ];
 
-// Initialize an empty string
+// Initialize empty string
 let output = "";
 
-// Loop through the array
+// Loop through array to build the output string
 for (let i = 0; i < lines.length; i++) {
-    output += lines[i];
-    // Add newline except after the last line
-    if (i < lines.length - 1) output += "\n";
+    output += lines[i] + "\n";
 }
 
-// Print all lines with one console.log
-console.log(output);
+// Print all lines at once using one console.log
+console.log(output.trim());
