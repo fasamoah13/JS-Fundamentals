@@ -1,18 +1,15 @@
-// Define the messages using 'const'
-const messages = [
+// Array of strings
+const lines = [
     "C is fun",
     "Python is cool",
     "JavaScript is amazing"
 ];
 
-// Initialize the output string using 'let'
+// Build the output using a loop
 let output = '';
-
-// Loop through the array to build the single output string,
-// appending a newline character (\n) after each message.
-for (const message of messages) {
-    output += message + '\n';
+for (let i = 0; i < lines.length; i++) {
+    output += lines[i] + (i < lines.length - 1 ? '\n' : '');
 }
 
-// Print the entire string in a single console.log call.
+// Print all lines with a single console.log
 console.log(output);
